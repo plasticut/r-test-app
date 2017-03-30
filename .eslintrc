@@ -1,0 +1,22 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "rules": {
+        "no-underscore-dangle": 0,
+        "no-use-before-define": [1, "nofunc"],
+        "no-unused-expressions": 0,
+        "no-empty-class": 0,
+        "quotes": [1, "single"]
+    },
+    "env": {
+        "node": true
+    },
+    "globals": {
+        "beforeEach": true,
+        "expect": true,
+        "describe": true,
+        "it": true,
+        "_": false
+    }
+}

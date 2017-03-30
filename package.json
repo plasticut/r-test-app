@@ -1,0 +1,28 @@
+{
+  "name": "r-test-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/auction.js",
+  "scripts": {
+    "test": "mocha --reporter spec tests",
+    "pretest": "npm run jshint && npm run eslint",
+    "jshint": "jshint ./lib ./tests",
+    "eslint": "eslint ./lib ./tests",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- --colors --reporter dot tests/"
+  },
+  "author": "plasticut@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.6.3"
+  },
+  "devDependencies": {
+    "bluebird": "^3.5.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.18.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0",
+    "pretty-hrtime": "^1.0.3"
+  }
+}
